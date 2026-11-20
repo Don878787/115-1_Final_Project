@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <!-- 任務 9：設定中文編碼 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 任務 8：設定瀏覽器分頁標題 -->
+    <title>我的個人介紹網頁 - 網站設計課程作業</title>
+
+    <!-- CSS 練習：在 <head> 中加入 <style> 區塊 -->
+    <style>
+        /* CSS 任務 1：修改整個網頁 (設定文字顏色與背景顏色) */
+        body {
+            color: #2c3e50;
+            background-color: #f4f7f9;
+            /* CSS 任務 4：自由增加一項 CSS 屬性 (設定行高讓閱讀更舒適) */
+            line-height: 1.8;
+        }
+
+        /* CSS 任務 2：修改主標題 (設定 color, font-size, font-weight, text-align) */
+        h1 {
+            color: #1a5276;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            /* CSS 任務 4 延伸：文字陰影效果 */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+        }
+
+        /* CSS 任務 3：使用 class (自訂 .notice 類別並設定至少兩個屬性) */
+        .notice {
+            background-color: #e8f4f8;
+            color: #154360;
+            border-left: 5px solid #2980b9;
+            padding: 12px 16px;
+            font-weight: bold;
+        }
+
+        /* CSS 任務 4 補充範例：自訂清單項目符號與連結底線樣式 */
+        ul {
+            list-style-type: square;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 任務 11：建立頁首區域 -->
+    <header>
+        <!-- 任務 1：建立網頁標題 (h1) -->
+        <h1>我的個人介紹</h1>
+        <!-- 套用 CSS 任務 3 建立的 .notice class -->
+        <p class="notice">歡迎來到我的個人主頁！這裡記錄了我的學習歷程、興趣與本學期課程目標。</p>
+    </header>
+
+    <!-- 任務 12：建立導覽區域（加入互相連結至 course.html） -->
+    <nav>
+        <a href="index.html"><strong>個人介紹（目前頁面）</strong></a> |
+        <a href="course.html">修課與課程介紹</a> |
+        <a href="#about">關於我</a> |
+        <a href="#interests">我的興趣</a> |
+        <a href="#goals">本學期目標</a> |
+        <a href="#contact">聯絡方式</a>
+    </nav>
+
+    <hr>
+
+    <!-- 任務 13：標示主要內容 -->
+    <main>
+        <!-- 任務 3：使用 div 建立內容區塊 (區塊 1：自我介紹) -->
+        <div id="about">
+            <!-- 任務 1：使用 h2 作為其他區塊的標題 -->
+            <h2>關於我</h2>
+            <!-- 任務 2：撰寫至少 50 字的自我介紹 -->
+            <!-- 任務 4：使用 span 標示重點文字 -->
+            <!-- 任務 10：使用 strong 強調重要內容 -->
+            <p>
+                大家好！我目前就讀於<span>海事資訊科技系</span>，平時對網頁開發與互動設計充滿熱情。之所以會選修這門網頁設計課程，是因為我無法找到隊友，因此被<strong>張珀銀老師當掉</strong>。在接下來的課程中，我必須學會如何設計出兼具美觀與實用性的現代化網頁，為未來的專案開發打下良好基礎！
+            </p>
+        </div>
+
+        <!-- 任務 3：使用 div 建立內容區塊 (區塊 2：興趣) -->
+        <div id="interests">
+            <h2>我的興趣</h2>
+            <!-- 任務 6A：使用 ul、li 列出至少 3 個興趣 -->
+            <ul>
+                <li>遊戲開發</li>
+                <li>構思故事</li>
+                <li>玩遊戲</li>
+                <li>程式設計</li>
+            </ul>
+        </div>
+
+        <!-- 任務 3：使用 div 建立內容區塊 (區塊 3：學習目標) -->
+        <div id="goals">
+            <h3>本學期想完成的三件事情</h3>
+            <!-- 任務 6B：使用 ol、li 列出本學期想完成的三件事情 -->
+            <ol>
+                <li><strong>熟練運用 HTML5 語意化標籤</strong>，建立結構清晰的網頁。</li>
+                <li>學會使用 CSS 進行版面配置與響應式網頁設計（RWD）。</li>
+                <li>獨立完成一個完整的個人作品集網站作為期末專案。</li>
+            </ol>
+        </div>
+
+        <!-- 任務 3：使用 div 建立內容區塊 (區塊 4：聯絡資料與超連結) -->
+        <div id="contact">
+            <h2>聯絡資料與相關連結</h2>
+            <!-- 任務 5：使用 br 進行換行 -->
+            <!-- 任務 7：建立至少 2 個超連結（外部網站 + Email 連結） -->
+            <p>
+                姓名：蔣沛恆<br>
+                科系：海事資訊科技系 四年級<br>
+                電子信箱：<a href="mailto:c111181137@nkust.edu.tw">c111181137@nkust.edu.tw</a><br>
+                常用學習網站：<a href="https://elearning.nkust.edu.tw/moocs/#/home" target="_blank" rel="noopener noreferrer">教學平台</a><br>
+                更多頁面：<a href="course.html">前往查看我的修課紀錄與課程介紹 &rarr;</a>
+            </p>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- 任務 14：建立頁尾區域 -->
+    <footer>
+        <p>製作人：蔣沛恆 ｜ 學號：C111181137 ｜ 聯絡信箱：c111181137@nkust.edu.tw</p>
+        <p>&copy; 2026 我的個人介紹網頁. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
