@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	</head>
+	<body>
+	<h1>使用意見調查表</h1>
+	<form>
+		<label for="uname">姓名標籤</label>
+		<p>姓&nbsp;&nbsp;&nbsp;名：<input type="text" name="username" size="40"></p>
+		<p>E-mail:<input type="text" name="username" value="username@mailserver" size="40"></p>
+		<p>年&nbsp;&nbsp;&nbsp;齡：<input type="radio" name="userage" value="age1">未滿20歲
+		<input type="radio" name="userage" value="age2">20-29
+		<input type="radio" name="userage" value="age3">30-39
+		<input type="radio" name="userage" value="age4">40歲以上</p>
+		<p>使用過那些牌子的行動電話?<input type="checkbox" name="userphone[]" value="HTC">HTC
+		<input type="checkbox" name="userphone[]" value="APPLE">APPLE
+		<input type="checkbox" name="userphone[]" value="OPPO" checked>OPPO</p>
+		<p>使用行動電話常遇到的問題：<br><textarea type="text" name="usertrouble" cols="45" rows="4">行動電話的電池經常很快沒有電!</textarea></p>
+		<p>使用過那些業者的門號：
+		<select type="text" name="usernumber[]" size="4">
+			<option value="中華電信">中華電信
+			<option value="台灣大哥大">台灣大哥大
+			<option value="遠傳電信">遠傳電信
+			<option value="亞太電信">亞太電信
+		</select></p>
+		<input type="submit" value="提交">
+		<input type="reset" value="重設">
+	</form>
+	</body>
+</html>
